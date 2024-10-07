@@ -1,0 +1,1019 @@
+<!-- -*- mode: jinja2 -*- -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Read and Write CSV Files Using Modern Fortran">
+    <meta name="author" content="Jacob Williams" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>All Procedures &ndash; csv-fortran
+</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">csv-fortran </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/types.html">Derived Types</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12" id='text'>
+			 <h1>Procedures</h1>
+			 <table class="table table-striped">
+			 <thead><tr><th>Procedure</th><th>Location</th><th>Procedure Type</th><th>Description</th></tr></thead>
+			 <tbody>
+			   <tr>
+                 <td><a href='../proc/add_cell.html'>add_cell</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Add a cell to a CSV file.</p><a href="../proc/add_cell.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/add_matrix.html'>add_matrix</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Add a matrix to a CSV file. Each row is added as a new line.
+Line breaks are added at the end of each line (in this way it
+differs from the other <code>add</code> routines).</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/add_vector.html'>add_vector</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Add a vector to a CSV file. Each element is added as a cell to the current line.</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/close_csv_file.html'>close_csv_file</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Close a CSV file after writing</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/csv_get_value.html'>csv_get_value</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Get an individual value from the <code>csv_data</code> structure in the CSV class.</p><a href="../proc/csv_get_value.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/destroy_csv_file.html'>destroy_csv_file</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Destroy the data in a CSV file.</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/expand_vector.html'>expand_vector</a></td>
+                 <td><a href='../module/csv_utilities.html'>csv_utilities</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Add elements to the integer vector in chunks.</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/get_character_column.html'>get_character_column</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Convert a column from a <code>csv_string</code> matrix to a <code>character(len=*)</code> vector.</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/get_column.html'>get_column</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Return a column from a CSV file vector.</p><a href="../proc/get_column.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/get_csv_data_as_str.html'>get_csv_data_as_str</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Returns a <code>character(len=*)</code> array containing the csv data
+(<code>read</code> must have already been called to read the file).</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/get_csv_string_column.html'>get_csv_string_column</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Convert a column from a <code>csv_string</code> matrix to a <code>type(csv_string)</code> vector.</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/get_header_csv_str.html'>get_header_csv_str</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Returns the header as a <code>type(csv_string)</code> array.
+(<code>read</code> must have already been called to read the file).</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/get_header_str.html'>get_header_str</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Returns the header as a <code>character(len=*)</code> array.
+(<code>read</code> must have already been called to read the file).</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/get_integer_column.html'>get_integer_column</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Return a column from a CSV file as a <code>integer(ip)</code> vector.</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/get_logical_column.html'>get_logical_column</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Convert a column from a <code>csv_string</code> matrix to a <code>logical</code> vector.</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/get_real_sp_column.html'>get_real_sp_column</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Return a column from a CSV file as a <code>real(sp)</code> vector.</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/get_real_wp_column.html'>get_real_wp_column</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Return a column from a CSV file as a <code>real(wp)</code> vector.</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/infer_variable_type.html'>infer_variable_type</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Infers the variable type, assuming the following precedence:</p><a href="../proc/infer_variable_type.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/initialize_csv_file.html'>initialize_csv_file</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Initialize a <a href="../type/csv_file.html">csv_file</a>.</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/lowercase_string.html'>lowercase_string</a></td>
+                 <td><a href='../module/csv_utilities.html'>csv_utilities</a></td>
+                 <td>Function</td>
+                 <td><p>Returns lowercase version of the string.</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/next_row.html'>next_row</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Advance to the next row in the CSV file
+(write any blank cells that are necessary to finish the row)</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/number_of_lines_in_file.html'>number_of_lines_in_file</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Function</td>
+                 <td><p>Returns the number of lines in a text file.</p><a href="../proc/number_of_lines_in_file.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/open_csv_file.html'>open_csv_file</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Open a CSV file for writing.</p><a href="../proc/open_csv_file.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/read_csv_file.html'>read_csv_file</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Read a CSV file.</p><a href="../proc/read_csv_file.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/read_line_from_file.html'>read_line_from_file</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Reads the next line from a file.</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/sort_ascending.html'>sort_ascending</a></td>
+                 <td><a href='../module/csv_utilities.html'>csv_utilities</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Sorts an integer array <code>ivec</code> in increasing order.
+Uses a basic recursive quicksort
+(with insertion sort for partitions with <script type="math/tex">\le</script> 20 elements).</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/split.html'>split</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Split a character string using a token.
+  This routine is inspired by the Python split function.</p><a href="../proc/split.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/swap.html'>swap</a></td>
+                 <td><a href='../module/csv_utilities.html'>csv_utilities</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Swap two integer values.</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/to_integer.html'>to_integer</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Convert a string to a <code>integer(ip)</code></p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/to_logical.html'>to_logical</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Convert a string to a <code>logical</code></p><a href="../proc/to_logical.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/to_real_sp.html'>to_real_sp</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Convert a string to a <code>real(sp)</code></p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/to_real_wp.html'>to_real_wp</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Convert a string to a <code>real(wp)</code></p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/tokenize_csv_line.html'>tokenize_csv_line</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Tokenize a line from a CSV file. The result is an array of <code>csv_string</code> types.</p><a href="../proc/tokenize_csv_line.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/unique.html'>unique</a></td>
+                 <td><a href='../module/csv_utilities.html'>csv_utilities</a></td>
+                 <td>Function</td>
+                 <td><p>Returns only the unique elements of the vector.</p></td>
+               </tr>
+			   <tr>
+                 <td><a href='../proc/variable_types.html'>variable_types</a></td>
+                 <td><a href='../module/csv_module.html'>csv_module</a></td>
+                 <td>Subroutine</td>
+                 <td><p>Returns an array indicating the variable type of each columns.</p><a href="../proc/variable_types.html" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+               </tr>
+			 </tbody></table>
+             <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: call~~graph~~CallGraph Pages: 1 -->
+<svg id="callgraphCallGraph" width="855pt" height="639pt"
+ viewBox="0.00 0.00 855.00 639.48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="call~~graph~~CallGraph" class="graph" transform="scale(0.89 0.89) rotate(0) translate(4 717)">
+<title>call~~graph~~CallGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-717 960,-717 960,4 -4,4"/>
+<!-- none~add -->
+<g id="call~~graph~~CallGraph_node1" class="node">
+<title>none~add</title>
+<g id="a_call~~graph~~CallGraph_node1"><a xlink:href="../type/csv_file.html#boundprocedure-add" xlink:title="csv_file%add">
+<polygon fill="#a7506f" stroke="#a7506f" points="116,-66 34,-66 34,-42 116,-42 116,-66"/>
+<text text-anchor="middle" x="75" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%add</text>
+</a>
+</g>
+</g>
+<!-- proc~add_cell -->
+<g id="call~~graph~~CallGraph_node4" class="node">
+<title>proc~add_cell</title>
+<g id="a_call~~graph~~CallGraph_node4"><a xlink:href="../proc/add_cell.html" xlink:title="csv_file%add_cell">
+<polygon fill="#d9534f" stroke="#d9534f" points="329.5,-108 223.5,-108 223.5,-84 329.5,-84 329.5,-108"/>
+<text text-anchor="middle" x="276.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%add_cell</text>
+</a>
+</g>
+</g>
+<!-- none~add&#45;&gt;proc~add_cell -->
+<g id="call~~graph~~CallGraph_edge1" class="edge">
+<title>none~add&#45;&gt;proc~add_cell</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M116.37,-62.5C144.21,-68.36 181.76,-76.27 213.39,-82.92"/>
+<polygon fill="#000000" stroke="#000000" points="212.92,-86.4 223.43,-85.04 214.37,-79.55 212.92,-86.4"/>
+</g>
+<!-- proc~add_matrix -->
+<g id="call~~graph~~CallGraph_node5" class="node">
+<title>proc~add_matrix</title>
+<g id="a_call~~graph~~CallGraph_node5"><a xlink:href="../proc/add_matrix.html" xlink:title="csv_file%add_matrix">
+<polygon fill="#d9534f" stroke="#d9534f" points="337,-66 216,-66 216,-42 337,-42 337,-66"/>
+<text text-anchor="middle" x="276.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%add_matrix</text>
+</a>
+</g>
+</g>
+<!-- none~add&#45;&gt;proc~add_matrix -->
+<g id="call~~graph~~CallGraph_edge2" class="edge">
+<title>none~add&#45;&gt;proc~add_matrix</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M116.37,-48.45C141.94,-47.27 175.68,-46.96 205.51,-47.52"/>
+<polygon fill="#000000" stroke="#000000" points="205.81,-51.03 215.88,-47.76 205.97,-44.03 205.81,-51.03"/>
+</g>
+<!-- proc~add_vector -->
+<g id="call~~graph~~CallGraph_node6" class="node">
+<title>proc~add_vector</title>
+<g id="a_call~~graph~~CallGraph_node6"><a xlink:href="../proc/add_vector.html" xlink:title="csv_file%add_vector">
+<polygon fill="#d9534f" stroke="#d9534f" points="337,-24 216,-24 216,0 337,0 337,-24"/>
+<text text-anchor="middle" x="276.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%add_vector</text>
+</a>
+</g>
+</g>
+<!-- none~add&#45;&gt;proc~add_vector -->
+<g id="call~~graph~~CallGraph_edge3" class="edge">
+<title>none~add&#45;&gt;proc~add_vector</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M108.94,-41.9C135.22,-34.87 172.95,-26.49 205.85,-20.19"/>
+<polygon fill="#000000" stroke="#000000" points="206.71,-23.59 215.89,-18.31 205.41,-16.71 206.71,-23.59"/>
+</g>
+<!-- none~get -->
+<g id="call~~graph~~CallGraph_node2" class="node">
+<title>none~get</title>
+<g id="a_call~~graph~~CallGraph_node2"><a xlink:href="../type/csv_file.html#boundprocedure-get" xlink:title="csv_file%get">
+<polygon fill="#a7506f" stroke="#a7506f" points="114.5,-293 35.5,-293 35.5,-269 114.5,-269 114.5,-293"/>
+<text text-anchor="middle" x="75" y="-278.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%get</text>
+</a>
+</g>
+</g>
+<!-- proc~csv_get_value -->
+<g id="call~~graph~~CallGraph_node8" class="node">
+<title>proc~csv_get_value</title>
+<g id="a_call~~graph~~CallGraph_node8"><a xlink:href="../proc/csv_get_value.html" xlink:title="csv_file%csv_get_value">
+<polygon fill="#d9534f" stroke="#d9534f" points="714,-314 578,-314 578,-290 714,-290 714,-314"/>
+<text text-anchor="middle" x="646" y="-299.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%csv_get_value</text>
+</a>
+</g>
+</g>
+<!-- none~get&#45;&gt;proc~csv_get_value -->
+<g id="call~~graph~~CallGraph_edge4" class="edge">
+<title>none~get&#45;&gt;proc~csv_get_value</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M86.68,-268.8C104.78,-249.17 143.66,-211.32 186,-197 262.21,-171.23 287.86,-182.55 367,-197 459.74,-213.93 561.72,-260.19 612.5,-285.28"/>
+<polygon fill="#000000" stroke="#000000" points="611.16,-288.52 621.67,-289.85 614.28,-282.25 611.16,-288.52"/>
+</g>
+<!-- proc~get_character_column -->
+<g id="call~~graph~~CallGraph_node11" class="node">
+<title>proc~get_character_column</title>
+<g id="a_call~~graph~~CallGraph_node11"><a xlink:href="../proc/get_character_column.html" xlink:title="csv_file%get_character_column">
+<polygon fill="#d9534f" stroke="#d9534f" points="367,-230 186,-230 186,-206 367,-206 367,-230"/>
+<text text-anchor="middle" x="276.5" y="-215.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%get_character_column</text>
+</a>
+</g>
+</g>
+<!-- none~get&#45;&gt;proc~get_character_column -->
+<g id="call~~graph~~CallGraph_edge5" class="edge">
+<title>none~get&#45;&gt;proc~get_character_column</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M104.58,-268.87C126.57,-259.84 157.86,-247.63 186,-239 193.4,-236.73 201.21,-234.57 209.01,-232.55"/>
+<polygon fill="#000000" stroke="#000000" points="210.01,-235.91 218.85,-230.08 208.3,-229.12 210.01,-235.91"/>
+</g>
+<!-- proc~get_csv_data_as_str -->
+<g id="call~~graph~~CallGraph_node13" class="node">
+<title>proc~get_csv_data_as_str</title>
+<g id="a_call~~graph~~CallGraph_node13"><a xlink:href="../proc/get_csv_data_as_str.html" xlink:title="csv_file%get_csv_data_as_str">
+<polygon fill="#d9534f" stroke="#d9534f" points="359.5,-150 193.5,-150 193.5,-126 359.5,-126 359.5,-150"/>
+<text text-anchor="middle" x="276.5" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%get_csv_data_as_str</text>
+</a>
+</g>
+</g>
+<!-- none~get&#45;&gt;proc~get_csv_data_as_str -->
+<g id="call~~graph~~CallGraph_edge6" class="edge">
+<title>none~get&#45;&gt;proc~get_csv_data_as_str</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M84.11,-268.71C100.49,-244.87 139.87,-192.25 186,-164 192.69,-159.9 200.07,-156.42 207.62,-153.47"/>
+<polygon fill="#000000" stroke="#000000" points="209.01,-156.69 217.24,-150.02 206.65,-150.1 209.01,-156.69"/>
+</g>
+<!-- proc~get_csv_string_column -->
+<g id="call~~graph~~CallGraph_node14" class="node">
+<title>proc~get_csv_string_column</title>
+<g id="a_call~~graph~~CallGraph_node14"><a xlink:href="../proc/get_csv_string_column.html" xlink:title="csv_file%get_csv_string_column">
+<polygon fill="#d9534f" stroke="#d9534f" points="367,-440 186,-440 186,-416 367,-416 367,-440"/>
+<text text-anchor="middle" x="276.5" y="-425.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%get_csv_string_column</text>
+</a>
+</g>
+</g>
+<!-- none~get&#45;&gt;proc~get_csv_string_column -->
+<g id="call~~graph~~CallGraph_edge7" class="edge">
+<title>none~get&#45;&gt;proc~get_csv_string_column</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M83.02,-293.29C98.27,-318.79 136.99,-377.5 186,-407 189.03,-408.82 192.21,-410.49 195.49,-412.01"/>
+<polygon fill="#000000" stroke="#000000" points="194.36,-415.33 204.94,-415.93 197.04,-408.87 194.36,-415.33"/>
+</g>
+<!-- proc~get_integer_column -->
+<g id="call~~graph~~CallGraph_node17" class="node">
+<title>proc~get_integer_column</title>
+<g id="a_call~~graph~~CallGraph_node17"><a xlink:href="../proc/get_integer_column.html" xlink:title="csv_file%get_integer_column">
+<polygon fill="#d9534f" stroke="#d9534f" points="360,-398 193,-398 193,-374 360,-374 360,-398"/>
+<text text-anchor="middle" x="276.5" y="-383.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%get_integer_column</text>
+</a>
+</g>
+</g>
+<!-- none~get&#45;&gt;proc~get_integer_column -->
+<g id="call~~graph~~CallGraph_edge8" class="edge">
+<title>none~get&#45;&gt;proc~get_integer_column</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M88.03,-293.01C107.11,-311.36 146.24,-346.22 186,-365 190.37,-367.06 194.96,-368.93 199.65,-370.63"/>
+<polygon fill="#000000" stroke="#000000" points="198.81,-374.03 209.4,-373.86 201.01,-367.39 198.81,-374.03"/>
+</g>
+<!-- proc~get_logical_column -->
+<g id="call~~graph~~CallGraph_node18" class="node">
+<title>proc~get_logical_column</title>
+<g id="a_call~~graph~~CallGraph_node18"><a xlink:href="../proc/get_logical_column.html" xlink:title="csv_file%get_logical_column">
+<polygon fill="#d9534f" stroke="#d9534f" points="358.5,-356 194.5,-356 194.5,-332 358.5,-332 358.5,-356"/>
+<text text-anchor="middle" x="276.5" y="-341.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%get_logical_column</text>
+</a>
+</g>
+</g>
+<!-- none~get&#45;&gt;proc~get_logical_column -->
+<g id="call~~graph~~CallGraph_edge9" class="edge">
+<title>none~get&#45;&gt;proc~get_logical_column</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M104.58,-293.13C126.57,-302.16 157.86,-314.37 186,-323 193.4,-325.27 201.21,-327.43 209.01,-329.45"/>
+<polygon fill="#000000" stroke="#000000" points="208.3,-332.88 218.85,-331.92 210.01,-326.09 208.3,-332.88"/>
+</g>
+<!-- proc~get_real_sp_column -->
+<g id="call~~graph~~CallGraph_node19" class="node">
+<title>proc~get_real_sp_column</title>
+<g id="a_call~~graph~~CallGraph_node19"><a xlink:href="../proc/get_real_sp_column.html" xlink:title="csv_file%get_real_sp_column">
+<polygon fill="#d9534f" stroke="#d9534f" points="359.5,-314 193.5,-314 193.5,-290 359.5,-290 359.5,-314"/>
+<text text-anchor="middle" x="276.5" y="-299.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%get_real_sp_column</text>
+</a>
+</g>
+</g>
+<!-- none~get&#45;&gt;proc~get_real_sp_column -->
+<g id="call~~graph~~CallGraph_edge10" class="edge">
+<title>none~get&#45;&gt;proc~get_real_sp_column</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M114.94,-285.1C134.49,-287.16 159.07,-289.74 183.08,-292.27"/>
+<polygon fill="#000000" stroke="#000000" points="183.01,-295.78 193.32,-293.35 183.75,-288.82 183.01,-295.78"/>
+</g>
+<!-- proc~get_real_wp_column -->
+<g id="call~~graph~~CallGraph_node20" class="node">
+<title>proc~get_real_wp_column</title>
+<g id="a_call~~graph~~CallGraph_node20"><a xlink:href="../proc/get_real_wp_column.html" xlink:title="csv_file%get_real_wp_column">
+<polygon fill="#d9534f" stroke="#d9534f" points="361,-272 192,-272 192,-248 361,-248 361,-272"/>
+<text text-anchor="middle" x="276.5" y="-257.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%get_real_wp_column</text>
+</a>
+</g>
+</g>
+<!-- none~get&#45;&gt;proc~get_real_wp_column -->
+<g id="call~~graph~~CallGraph_edge11" class="edge">
+<title>none~get&#45;&gt;proc~get_real_wp_column</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M114.94,-276.9C134.09,-274.89 158.07,-272.36 181.62,-269.88"/>
+<polygon fill="#000000" stroke="#000000" points="182.09,-273.35 191.67,-268.82 181.36,-266.39 182.09,-273.35"/>
+</g>
+<!-- none~get_header -->
+<g id="call~~graph~~CallGraph_node3" class="node">
+<title>none~get_header</title>
+<g id="a_call~~graph~~CallGraph_node3"><a xlink:href="../type/csv_file.html#boundprocedure-get_header" xlink:title="csv_file%get_header">
+<polygon fill="#a7506f" stroke="#a7506f" points="136,-482 14,-482 14,-458 136,-458 136,-482"/>
+<text text-anchor="middle" x="75" y="-467.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%get_header</text>
+</a>
+</g>
+</g>
+<!-- proc~get_header_csv_str -->
+<g id="call~~graph~~CallGraph_node15" class="node">
+<title>proc~get_header_csv_str</title>
+<g id="a_call~~graph~~CallGraph_node15"><a xlink:href="../proc/get_header_csv_str.html" xlink:title="csv_file%get_header_csv_str">
+<polygon fill="#d9534f" stroke="#d9534f" points="358,-524 195,-524 195,-500 358,-500 358,-524"/>
+<text text-anchor="middle" x="276.5" y="-509.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%get_header_csv_str</text>
+</a>
+</g>
+</g>
+<!-- none~get_header&#45;&gt;proc~get_header_csv_str -->
+<g id="call~~graph~~CallGraph_edge12" class="edge">
+<title>none~get_header&#45;&gt;proc~get_header_csv_str</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M133.17,-482.04C156.65,-486.98 184,-492.74 208.42,-497.88"/>
+<polygon fill="#000000" stroke="#000000" points="207.82,-501.33 218.32,-499.96 209.26,-494.48 207.82,-501.33"/>
+</g>
+<!-- proc~get_header_str -->
+<g id="call~~graph~~CallGraph_node16" class="node">
+<title>proc~get_header_str</title>
+<g id="a_call~~graph~~CallGraph_node16"><a xlink:href="../proc/get_header_str.html" xlink:title="csv_file%get_header_str">
+<polygon fill="#d9534f" stroke="#d9534f" points="347,-482 206,-482 206,-458 347,-458 347,-482"/>
+<text text-anchor="middle" x="276.5" y="-467.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%get_header_str</text>
+</a>
+</g>
+</g>
+<!-- none~get_header&#45;&gt;proc~get_header_str -->
+<g id="call~~graph~~CallGraph_edge13" class="edge">
+<title>none~get_header&#45;&gt;proc~get_header_str</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M136.13,-470C154.79,-470 175.66,-470 195.45,-470"/>
+<polygon fill="#000000" stroke="#000000" points="195.68,-473.5 205.68,-470 195.68,-466.5 195.68,-473.5"/>
+</g>
+<!-- proc~add_matrix&#45;&gt;none~add -->
+<g id="call~~graph~~CallGraph_edge14" class="edge">
+<title>proc~add_matrix&#45;&gt;none~add</title>
+<path fill="none" stroke="#000000" d="M215.88,-60.24C187.39,-61 153.66,-60.91 126.45,-59.96"/>
+<polygon fill="#000000" stroke="#000000" points="126.51,-56.46 116.37,-59.55 126.22,-63.45 126.51,-56.46"/>
+</g>
+<!-- proc~next_row -->
+<g id="call~~graph~~CallGraph_node24" class="node">
+<title>proc~next_row</title>
+<g id="a_call~~graph~~CallGraph_node24"><a xlink:href="../proc/next_row.html" xlink:title="csv_file%next_row">
+<polygon fill="#d9534f" stroke="#d9534f" points="526.5,-66 418.5,-66 418.5,-42 526.5,-42 526.5,-66"/>
+<text text-anchor="middle" x="472.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%next_row</text>
+</a>
+</g>
+</g>
+<!-- proc~add_matrix&#45;&gt;proc~next_row -->
+<g id="call~~graph~~CallGraph_edge15" class="edge">
+<title>proc~add_matrix&#45;&gt;proc~next_row</title>
+<path fill="none" stroke="#000000" d="M337.02,-54C359.53,-54 385.22,-54 408.07,-54"/>
+<polygon fill="#000000" stroke="#000000" points="408.34,-57.5 418.34,-54 408.34,-50.5 408.34,-57.5"/>
+</g>
+<!-- proc~add_vector&#45;&gt;none~add -->
+<g id="call~~graph~~CallGraph_edge16" class="edge">
+<title>proc~add_vector&#45;&gt;none~add</title>
+<path fill="none" stroke="#000000" d="M242.77,-24.04C211.16,-32.52 162.84,-42.95 126.33,-49.36"/>
+<polygon fill="#000000" stroke="#000000" points="125.64,-45.92 116.37,-51.05 126.82,-52.82 125.64,-45.92"/>
+</g>
+<!-- proc~close_csv_file -->
+<g id="call~~graph~~CallGraph_node7" class="node">
+<title>proc~close_csv_file</title>
+<g id="a_call~~graph~~CallGraph_node7"><a xlink:href="../proc/close_csv_file.html" xlink:title="csv_file%close_csv_file">
+<polygon fill="#d9534f" stroke="#d9534f" points="141.5,-524 8.5,-524 8.5,-500 141.5,-500 141.5,-524"/>
+<text text-anchor="middle" x="75" y="-509.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%close_csv_file</text>
+</a>
+</g>
+</g>
+<!-- proc~to_integer -->
+<g id="call~~graph~~CallGraph_node32" class="node">
+<title>proc~to_integer</title>
+<g id="a_call~~graph~~CallGraph_node32"><a xlink:href="../proc/to_integer.html" xlink:title="to_integer">
+<polygon fill="#d9534f" stroke="#d9534f" points="818,-398 751,-398 751,-374 818,-374 818,-398"/>
+<text text-anchor="middle" x="784.5" y="-383.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">to_integer</text>
+</a>
+</g>
+</g>
+<!-- proc~csv_get_value&#45;&gt;proc~to_integer -->
+<g id="call~~graph~~CallGraph_edge17" class="edge">
+<title>proc~csv_get_value&#45;&gt;proc~to_integer</title>
+<path fill="none" stroke="#000000" d="M696.75,-314.11C702.8,-316.57 708.71,-319.51 714,-323 734.52,-336.53 731.37,-348.95 750,-365 751.14,-365.98 752.33,-366.95 753.55,-367.89"/>
+<polygon fill="#000000" stroke="#000000" points="751.73,-370.89 761.91,-373.82 755.77,-365.18 751.73,-370.89"/>
+</g>
+<!-- proc~to_logical -->
+<g id="call~~graph~~CallGraph_node33" class="node">
+<title>proc~to_logical</title>
+<g id="a_call~~graph~~CallGraph_node33"><a xlink:href="../proc/to_logical.html" xlink:title="to_logical">
+<polygon fill="#d9534f" stroke="#d9534f" points="816.5,-356 752.5,-356 752.5,-332 816.5,-332 816.5,-356"/>
+<text text-anchor="middle" x="784.5" y="-341.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">to_logical</text>
+</a>
+</g>
+</g>
+<!-- proc~csv_get_value&#45;&gt;proc~to_logical -->
+<g id="call~~graph~~CallGraph_edge18" class="edge">
+<title>proc~csv_get_value&#45;&gt;proc~to_logical</title>
+<path fill="none" stroke="#000000" d="M686.12,-314.04C703.8,-319.48 724.69,-325.9 742.58,-331.41"/>
+<polygon fill="#000000" stroke="#000000" points="741.58,-334.76 752.17,-334.36 743.64,-328.07 741.58,-334.76"/>
+</g>
+<!-- proc~to_real_sp -->
+<g id="call~~graph~~CallGraph_node34" class="node">
+<title>proc~to_real_sp</title>
+<g id="a_call~~graph~~CallGraph_node34"><a xlink:href="../proc/to_real_sp.html" xlink:title="to_real_sp">
+<polygon fill="#d9534f" stroke="#d9534f" points="817.5,-272 751.5,-272 751.5,-248 817.5,-248 817.5,-272"/>
+<text text-anchor="middle" x="784.5" y="-257.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">to_real_sp</text>
+</a>
+</g>
+</g>
+<!-- proc~csv_get_value&#45;&gt;proc~to_real_sp -->
+<g id="call~~graph~~CallGraph_edge19" class="edge">
+<title>proc~csv_get_value&#45;&gt;proc~to_real_sp</title>
+<path fill="none" stroke="#000000" d="M686.12,-289.96C703.37,-284.66 723.68,-278.41 741.28,-272.99"/>
+<polygon fill="#000000" stroke="#000000" points="742.75,-276.2 751.28,-269.91 740.7,-269.51 742.75,-276.2"/>
+</g>
+<!-- proc~to_real_wp -->
+<g id="call~~graph~~CallGraph_node35" class="node">
+<title>proc~to_real_wp</title>
+<g id="a_call~~graph~~CallGraph_node35"><a xlink:href="../proc/to_real_wp.html" xlink:title="to_real_wp">
+<polygon fill="#d9534f" stroke="#d9534f" points="819,-314 750,-314 750,-290 819,-290 819,-314"/>
+<text text-anchor="middle" x="784.5" y="-299.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">to_real_wp</text>
+</a>
+</g>
+</g>
+<!-- proc~csv_get_value&#45;&gt;proc~to_real_wp -->
+<g id="call~~graph~~CallGraph_edge20" class="edge">
+<title>proc~csv_get_value&#45;&gt;proc~to_real_wp</title>
+<path fill="none" stroke="#000000" d="M714.05,-302C722.77,-302 731.52,-302 739.73,-302"/>
+<polygon fill="#000000" stroke="#000000" points="739.79,-305.5 749.79,-302 739.79,-298.5 739.79,-305.5"/>
+</g>
+<!-- proc~destroy_csv_file -->
+<g id="call~~graph~~CallGraph_node9" class="node">
+<title>proc~destroy_csv_file</title>
+<g id="a_call~~graph~~CallGraph_node9"><a xlink:href="../proc/destroy_csv_file.html" xlink:title="csv_file%destroy_csv_file">
+<polygon fill="#d9534f" stroke="#d9534f" points="147.5,-566 2.5,-566 2.5,-542 147.5,-542 147.5,-566"/>
+<text text-anchor="middle" x="75" y="-551.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%destroy_csv_file</text>
+</a>
+</g>
+</g>
+<!-- proc~expand_vector -->
+<g id="call~~graph~~CallGraph_node10" class="node">
+<title>proc~expand_vector</title>
+<g id="a_call~~graph~~CallGraph_node10"><a xlink:href="../proc/expand_vector.html" xlink:title="expand_vector">
+<polygon fill="#d9534f" stroke="#d9534f" points="691.5,-589 600.5,-589 600.5,-565 691.5,-565 691.5,-589"/>
+<text text-anchor="middle" x="646" y="-574.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">expand_vector</text>
+</a>
+</g>
+</g>
+<!-- proc~get_column -->
+<g id="call~~graph~~CallGraph_node12" class="node">
+<title>proc~get_column</title>
+<g id="a_call~~graph~~CallGraph_node12"><a xlink:href="../proc/get_column.html" xlink:title="csv_file%get_column">
+<polygon fill="#d9534f" stroke="#d9534f" points="534.5,-314 410.5,-314 410.5,-290 534.5,-290 534.5,-314"/>
+<text text-anchor="middle" x="472.5" y="-299.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%get_column</text>
+</a>
+</g>
+</g>
+<!-- proc~get_character_column&#45;&gt;proc~get_column -->
+<g id="call~~graph~~CallGraph_edge21" class="edge">
+<title>proc~get_character_column&#45;&gt;proc~get_column</title>
+<path fill="none" stroke="#000000" d="M340.39,-230.12C349.46,-232.63 358.57,-235.57 367,-239 395.89,-250.76 426.11,-269.82 446.58,-283.91"/>
+<polygon fill="#000000" stroke="#000000" points="444.79,-286.93 454.99,-289.79 448.8,-281.19 444.79,-286.93"/>
+</g>
+<!-- proc~get_column&#45;&gt;proc~csv_get_value -->
+<g id="call~~graph~~CallGraph_edge22" class="edge">
+<title>proc~get_column&#45;&gt;proc~csv_get_value</title>
+<path fill="none" stroke="#000000" d="M534.93,-302C545.6,-302 556.82,-302 567.85,-302"/>
+<polygon fill="#000000" stroke="#000000" points="567.9,-305.5 577.9,-302 567.9,-298.5 567.9,-305.5"/>
+</g>
+<!-- proc~get_csv_string_column&#45;&gt;proc~get_column -->
+<g id="call~~graph~~CallGraph_edge23" class="edge">
+<title>proc~get_csv_string_column&#45;&gt;proc~get_column</title>
+<path fill="none" stroke="#000000" d="M353.31,-415.88C358.21,-413.42 362.84,-410.49 367,-407 398.11,-380.89 372.78,-350.14 403,-323 404.34,-321.8 405.74,-320.67 407.2,-319.6"/>
+<polygon fill="#000000" stroke="#000000" points="409.37,-322.38 416.08,-314.17 405.72,-316.4 409.37,-322.38"/>
+</g>
+<!-- proc~get_integer_column&#45;&gt;proc~get_column -->
+<g id="call~~graph~~CallGraph_edge24" class="edge">
+<title>proc~get_integer_column&#45;&gt;proc~get_column</title>
+<path fill="none" stroke="#000000" d="M348.09,-373.98C354.72,-371.53 361.14,-368.57 367,-365 388.01,-352.23 382.43,-336.47 403,-323 405.62,-321.28 408.39,-319.7 411.25,-318.24"/>
+<polygon fill="#000000" stroke="#000000" points="412.97,-321.31 420.64,-314 410.08,-314.93 412.97,-321.31"/>
+</g>
+<!-- proc~get_logical_column&#45;&gt;proc~get_column -->
+<g id="call~~graph~~CallGraph_edge25" class="edge">
+<title>proc~get_logical_column&#45;&gt;proc~get_column</title>
+<path fill="none" stroke="#000000" d="M333.09,-331.96C355.82,-327.04 382.28,-321.31 405.95,-316.19"/>
+<polygon fill="#000000" stroke="#000000" points="406.87,-319.57 415.9,-314.04 405.39,-312.73 406.87,-319.57"/>
+</g>
+<!-- proc~get_real_sp_column&#45;&gt;proc~get_column -->
+<g id="call~~graph~~CallGraph_edge26" class="edge">
+<title>proc~get_real_sp_column&#45;&gt;proc~get_column</title>
+<path fill="none" stroke="#000000" d="M359.77,-302C373.14,-302 386.88,-302 399.96,-302"/>
+<polygon fill="#000000" stroke="#000000" points="400.29,-305.5 410.29,-302 400.29,-298.5 400.29,-305.5"/>
+</g>
+<!-- proc~get_real_wp_column&#45;&gt;proc~get_column -->
+<g id="call~~graph~~CallGraph_edge27" class="edge">
+<title>proc~get_real_wp_column&#45;&gt;proc~get_column</title>
+<path fill="none" stroke="#000000" d="M333.09,-272.04C355.82,-276.96 382.28,-282.69 405.95,-287.81"/>
+<polygon fill="#000000" stroke="#000000" points="405.39,-291.27 415.9,-289.96 406.87,-284.43 405.39,-291.27"/>
+</g>
+<!-- proc~infer_variable_type -->
+<g id="call~~graph~~CallGraph_node21" class="node">
+<title>proc~infer_variable_type</title>
+<g id="a_call~~graph~~CallGraph_node21"><a xlink:href="../proc/infer_variable_type.html" xlink:title="infer_variable_type">
+<polygon fill="#d9534f" stroke="#d9534f" points="703.5,-356 588.5,-356 588.5,-332 703.5,-332 703.5,-356"/>
+<text text-anchor="middle" x="646" y="-341.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">infer_variable_type</text>
+</a>
+</g>
+</g>
+<!-- proc~infer_variable_type&#45;&gt;proc~to_integer -->
+<g id="call~~graph~~CallGraph_edge28" class="edge">
+<title>proc~infer_variable_type&#45;&gt;proc~to_integer</title>
+<path fill="none" stroke="#000000" d="M686.12,-356.04C703.24,-361.3 723.37,-367.5 740.88,-372.88"/>
+<polygon fill="#000000" stroke="#000000" points="740.25,-376.35 750.83,-375.95 742.31,-369.66 740.25,-376.35"/>
+</g>
+<!-- proc~infer_variable_type&#45;&gt;proc~to_logical -->
+<g id="call~~graph~~CallGraph_edge29" class="edge">
+<title>proc~infer_variable_type&#45;&gt;proc~to_logical</title>
+<path fill="none" stroke="#000000" d="M703.7,-344C716.62,-344 730.1,-344 742.23,-344"/>
+<polygon fill="#000000" stroke="#000000" points="742.5,-347.5 752.5,-344 742.5,-340.5 742.5,-347.5"/>
+</g>
+<!-- proc~infer_variable_type&#45;&gt;proc~to_real_wp -->
+<g id="call~~graph~~CallGraph_edge30" class="edge">
+<title>proc~infer_variable_type&#45;&gt;proc~to_real_wp</title>
+<path fill="none" stroke="#000000" d="M686.12,-331.96C702.97,-326.78 722.75,-320.69 740.07,-315.36"/>
+<polygon fill="#000000" stroke="#000000" points="741.41,-318.61 749.93,-312.33 739.35,-311.92 741.41,-318.61"/>
+</g>
+<!-- proc~initialize_csv_file -->
+<g id="call~~graph~~CallGraph_node22" class="node">
+<title>proc~initialize_csv_file</title>
+<g id="a_call~~graph~~CallGraph_node22"><a xlink:href="../proc/initialize_csv_file.html" xlink:title="csv_file%initialize_csv_file">
+<polygon fill="#d9534f" stroke="#d9534f" points="150,-671 0,-671 0,-647 150,-647 150,-671"/>
+<text text-anchor="middle" x="75" y="-656.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%initialize_csv_file</text>
+</a>
+</g>
+</g>
+<!-- proc~lowercase_string -->
+<g id="call~~graph~~CallGraph_node23" class="node">
+<title>proc~lowercase_string</title>
+<g id="a_call~~graph~~CallGraph_node23"><a xlink:href="../proc/lowercase_string.html" xlink:title="lowercase_string">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="956,-356 855,-356 855,-332 956,-332 956,-356"/>
+<text text-anchor="middle" x="905.5" y="-341.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">lowercase_string</text>
+</a>
+</g>
+</g>
+<!-- proc~number_of_lines_in_file -->
+<g id="call~~graph~~CallGraph_node25" class="node">
+<title>proc~number_of_lines_in_file</title>
+<g id="a_call~~graph~~CallGraph_node25"><a xlink:href="../proc/number_of_lines_in_file.html" xlink:title="number_of_lines_in_file">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="345,-692 208,-692 208,-668 345,-668 345,-692"/>
+<text text-anchor="middle" x="276.5" y="-677.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">number_of_lines_in_file</text>
+</a>
+</g>
+</g>
+<!-- proc~open_csv_file -->
+<g id="call~~graph~~CallGraph_node26" class="node">
+<title>proc~open_csv_file</title>
+<g id="a_call~~graph~~CallGraph_node26"><a xlink:href="../proc/open_csv_file.html" xlink:title="csv_file%open_csv_file">
+<polygon fill="#d9534f" stroke="#d9534f" points="141.5,-713 8.5,-713 8.5,-689 141.5,-689 141.5,-713"/>
+<text text-anchor="middle" x="75" y="-698.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%open_csv_file</text>
+</a>
+</g>
+</g>
+<!-- proc~read_csv_file -->
+<g id="call~~graph~~CallGraph_node27" class="node">
+<title>proc~read_csv_file</title>
+<g id="a_call~~graph~~CallGraph_node27"><a xlink:href="../proc/read_csv_file.html" xlink:title="csv_file%read_csv_file">
+<polygon fill="#d9534f" stroke="#d9534f" points="140,-629 10,-629 10,-605 140,-605 140,-629"/>
+<text text-anchor="middle" x="75" y="-614.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%read_csv_file</text>
+</a>
+</g>
+</g>
+<!-- proc~read_csv_file&#45;&gt;proc~number_of_lines_in_file -->
+<g id="call~~graph~~CallGraph_edge31" class="edge">
+<title>proc~read_csv_file&#45;&gt;proc~number_of_lines_in_file</title>
+<path fill="none" stroke="#000000" d="M125.17,-629.07C133.58,-631.67 142.14,-634.65 150,-638 167.04,-645.25 168.79,-652.14 186,-659 191.51,-661.2 197.3,-663.2 203.19,-665.01"/>
+<polygon fill="#000000" stroke="#000000" points="202.55,-668.47 213.13,-667.9 204.5,-661.75 202.55,-668.47"/>
+</g>
+<!-- proc~read_line_from_file -->
+<g id="call~~graph~~CallGraph_node28" class="node">
+<title>proc~read_line_from_file</title>
+<g id="a_call~~graph~~CallGraph_node28"><a xlink:href="../proc/read_line_from_file.html" xlink:title="csv_file%read_line_from_file">
+<polygon fill="#d9534f" stroke="#d9534f" points="357.5,-650 195.5,-650 195.5,-626 357.5,-626 357.5,-650"/>
+<text text-anchor="middle" x="276.5" y="-635.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%read_line_from_file</text>
+</a>
+</g>
+</g>
+<!-- proc~read_csv_file&#45;&gt;proc~read_line_from_file -->
+<g id="call~~graph~~CallGraph_edge32" class="edge">
+<title>proc~read_csv_file&#45;&gt;proc~read_line_from_file</title>
+<path fill="none" stroke="#000000" d="M140.22,-623.76C154.61,-625.27 170.14,-626.91 185.36,-628.51"/>
+<polygon fill="#000000" stroke="#000000" points="184.99,-631.99 195.3,-629.56 185.72,-625.03 184.99,-631.99"/>
+</g>
+<!-- proc~tokenize_csv_line -->
+<g id="call~~graph~~CallGraph_node36" class="node">
+<title>proc~tokenize_csv_line</title>
+<g id="a_call~~graph~~CallGraph_node36"><a xlink:href="../proc/tokenize_csv_line.html" xlink:title="csv_file%tokenize_csv_line">
+<polygon fill="#d9534f" stroke="#d9534f" points="353.5,-608 199.5,-608 199.5,-584 353.5,-584 353.5,-608"/>
+<text text-anchor="middle" x="276.5" y="-593.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%tokenize_csv_line</text>
+</a>
+</g>
+</g>
+<!-- proc~read_csv_file&#45;&gt;proc~tokenize_csv_line -->
+<g id="call~~graph~~CallGraph_edge33" class="edge">
+<title>proc~read_csv_file&#45;&gt;proc~tokenize_csv_line</title>
+<path fill="none" stroke="#000000" d="M140.22,-610.24C155.79,-608.6 172.68,-606.82 189.08,-605.1"/>
+<polygon fill="#000000" stroke="#000000" points="189.63,-608.56 199.21,-604.03 188.9,-601.6 189.63,-608.56"/>
+</g>
+<!-- proc~unique -->
+<g id="call~~graph~~CallGraph_node37" class="node">
+<title>proc~unique</title>
+<g id="a_call~~graph~~CallGraph_node37"><a xlink:href="../proc/unique.html" xlink:title="unique">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="303.5,-566 249.5,-566 249.5,-542 303.5,-542 303.5,-566"/>
+<text text-anchor="middle" x="276.5" y="-551.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">unique</text>
+</a>
+</g>
+</g>
+<!-- proc~read_csv_file&#45;&gt;proc~unique -->
+<g id="call~~graph~~CallGraph_edge34" class="edge">
+<title>proc~read_csv_file&#45;&gt;proc~unique</title>
+<path fill="none" stroke="#000000" d="M104.58,-604.87C126.57,-595.84 157.86,-583.63 186,-575 203.44,-569.65 223.14,-564.89 239.62,-561.26"/>
+<polygon fill="#000000" stroke="#000000" points="240.37,-564.68 249.4,-559.16 238.89,-557.84 240.37,-564.68"/>
+</g>
+<!-- proc~sort_ascending -->
+<g id="call~~graph~~CallGraph_node29" class="node">
+<title>proc~sort_ascending</title>
+<g id="a_call~~graph~~CallGraph_node29"><a xlink:href="../proc/sort_ascending.html" xlink:title="sort_ascending">
+<polygon fill="#d9534f" stroke="#d9534f" points="519,-528 426,-528 426,-504 519,-504 519,-528"/>
+<text text-anchor="middle" x="472.5" y="-513.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">sort_ascending</text>
+</a>
+</g>
+</g>
+<!-- proc~swap -->
+<g id="call~~graph~~CallGraph_node31" class="node">
+<title>proc~swap</title>
+<g id="a_call~~graph~~CallGraph_node31"><a xlink:href="../proc/swap.html" xlink:title="swap">
+<polygon fill="#d9534f" stroke="#d9534f" points="673,-528 619,-528 619,-504 673,-504 673,-528"/>
+<text text-anchor="middle" x="646" y="-513.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">swap</text>
+</a>
+</g>
+</g>
+<!-- proc~sort_ascending&#45;&gt;proc~swap -->
+<g id="call~~graph~~CallGraph_edge35" class="edge">
+<title>proc~sort_ascending&#45;&gt;proc~swap</title>
+<path fill="none" stroke="#000000" d="M519.01,-516C546.92,-516 582.18,-516 608.3,-516"/>
+<polygon fill="#000000" stroke="#000000" points="608.53,-519.5 618.53,-516 608.53,-512.5 608.53,-519.5"/>
+</g>
+<!-- proc~split -->
+<g id="call~~graph~~CallGraph_node30" class="node">
+<title>proc~split</title>
+<g id="a_call~~graph~~CallGraph_node30"><a xlink:href="../proc/split.html" xlink:title="split">
+<polygon fill="#d9534f" stroke="#d9534f" points="499.5,-608 445.5,-608 445.5,-584 499.5,-584 499.5,-608"/>
+<text text-anchor="middle" x="472.5" y="-593.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">split</text>
+</a>
+</g>
+</g>
+<!-- proc~split&#45;&gt;proc~expand_vector -->
+<g id="call~~graph~~CallGraph_edge36" class="edge">
+<title>proc~split&#45;&gt;proc~expand_vector</title>
+<path fill="none" stroke="#000000" d="M499.55,-593.11C523.54,-590.46 559.91,-586.43 590.28,-583.06"/>
+<polygon fill="#000000" stroke="#000000" points="590.77,-586.53 600.33,-581.95 590,-579.57 590.77,-586.53"/>
+</g>
+<!-- proc~to_logical&#45;&gt;proc~lowercase_string -->
+<g id="call~~graph~~CallGraph_edge37" class="edge">
+<title>proc~to_logical&#45;&gt;proc~lowercase_string</title>
+<path fill="none" stroke="#000000" d="M816.77,-344C825.26,-344 834.76,-344 844.28,-344"/>
+<polygon fill="#000000" stroke="#000000" points="844.57,-347.5 854.57,-344 844.57,-340.5 844.57,-347.5"/>
+</g>
+<!-- proc~tokenize_csv_line&#45;&gt;proc~split -->
+<g id="call~~graph~~CallGraph_edge38" class="edge">
+<title>proc~tokenize_csv_line&#45;&gt;proc~split</title>
+<path fill="none" stroke="#000000" d="M353.62,-596C381.66,-596 412.14,-596 435.09,-596"/>
+<polygon fill="#000000" stroke="#000000" points="435.38,-599.5 445.38,-596 435.38,-592.5 435.38,-599.5"/>
+</g>
+<!-- proc~unique&#45;&gt;proc~expand_vector -->
+<g id="call~~graph~~CallGraph_edge39" class="edge">
+<title>proc~unique&#45;&gt;proc~expand_vector</title>
+<path fill="none" stroke="#000000" d="M303.64,-555.64C363.11,-559.36 509.64,-568.53 590.03,-573.56"/>
+<polygon fill="#000000" stroke="#000000" points="590.25,-577.08 600.44,-574.21 590.68,-570.09 590.25,-577.08"/>
+</g>
+<!-- proc~unique&#45;&gt;proc~sort_ascending -->
+<g id="call~~graph~~CallGraph_edge40" class="edge">
+<title>proc~unique&#45;&gt;proc~sort_ascending</title>
+<path fill="none" stroke="#000000" d="M303.66,-548.88C332.21,-543.28 378.77,-534.16 415.61,-526.95"/>
+<polygon fill="#000000" stroke="#000000" points="416.58,-530.32 425.72,-524.97 415.23,-523.45 416.58,-530.32"/>
+</g>
+<!-- proc~variable_types -->
+<g id="call~~graph~~CallGraph_node38" class="node">
+<title>proc~variable_types</title>
+<g id="a_call~~graph~~CallGraph_node38"><a xlink:href="../proc/variable_types.html" xlink:title="csv_file%variable_types">
+<polygon fill="#d9534f" stroke="#d9534f" points="542,-356 403,-356 403,-332 542,-332 542,-356"/>
+<text text-anchor="middle" x="472.5" y="-341.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">csv_file%variable_types</text>
+</a>
+</g>
+</g>
+<!-- proc~variable_types&#45;&gt;proc~infer_variable_type -->
+<g id="call~~graph~~CallGraph_edge41" class="edge">
+<title>proc~variable_types&#45;&gt;proc~infer_variable_type</title>
+<path fill="none" stroke="#000000" d="M542.27,-344C554.09,-344 566.36,-344 578.13,-344"/>
+<polygon fill="#000000" stroke="#000000" points="578.32,-347.5 588.32,-344 578.32,-340.5 578.32,-347.5"/>
+</g>
+</g>
+</svg>
+</div>                <script>
+                  var pancallgraphCallGraph = svgPanZoom('#callgraphCallGraph',
+                    {zoomEnabled: true, controlIconsEnabled: true, fit: true, center: true,}
+                  );
+                </script>          <div>
+            <a type="button" class="graph-help" data-bs-toggle="modal" href="#CallGraph-help-text">Help</a>
+          </div>
+          <div class="modal fade" id="CallGraph-help-text" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+<p>Nodes of different colours represent the following: </p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="641pt" height="28pt"
+ viewBox="0.00 0.00 641.00 27.51" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(0.86 0.86) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 741.5,-28 741.5,4 -4,4"/>
+<!-- Subroutine -->
+<g id="node1" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="70,-24 0,-24 0,0 70,0 70,-24"/>
+<text text-anchor="middle" x="35" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node2" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="146,-24 88,-24 88,0 146,0 146,-24"/>
+<text text-anchor="middle" x="117" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Interface -->
+<g id="node3" class="node">
+<title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="225.5,-24 164.5,-24 164.5,0 225.5,0 225.5,-24"/>
+<text text-anchor="middle" x="195" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
+</g>
+<!-- Type Bound Procedure -->
+<g id="node4" class="node">
+<title>Type Bound Procedure</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="374,-24 244,-24 244,0 374,0 374,-24"/>
+<text text-anchor="middle" x="309" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Type Bound Procedure</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node5" class="node">
+<title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="537.5,-24 392.5,-24 392.5,0 537.5,0 537.5,-24"/>
+<text text-anchor="middle" x="465" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node6" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="614,-24 556,-24 556,0 614,0 614,-24"/>
+<text text-anchor="middle" x="585" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node7" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="737.5,-24 632.5,-24 632.5,0 737.5,0 737.5,-24"/>
+<text text-anchor="middle" x="685" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<p>Solid arrows point from a procedure to one which it calls. Dashed 
+arrows point from an interface to procedures which implement that interface.
+This could include the module procedures in a generic interface or the
+implementation in a submodule of an interface in a parent module.
+</p>
+ </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col">
+            <p>
+              csv-fortran
+ was developed by Jacob Williams<br>              &copy; 2024 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+
+    <!-- MathJax JavaScript
+             ================================================== -->
+             <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+          <script src="../tipuesearch/tipuesearch_content.js"></script>
+          <script src="../tipuesearch/tipuesearch_set.js"></script>
+          <script src="../tipuesearch/tipuesearch.js"></script>
+
+  </body>
+</html>
